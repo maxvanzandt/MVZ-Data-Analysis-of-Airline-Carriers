@@ -1,5 +1,4 @@
-# maxvanzandt
-Data Analysis of Airline Carriers
+# Data Analysis of Airline Carriers
 Data comes from an open source on Kaggle.
 Data regarding U.S. airlines and their delays, cancellations, and arrival times with emphasis on the reason for the delays.
 Includes animated visualizations of the data using RStudio and conducted simple linear, logistic, multiple linear, and K nearest neighbor analyses.
