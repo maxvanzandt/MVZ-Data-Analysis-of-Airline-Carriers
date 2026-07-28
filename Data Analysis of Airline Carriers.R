@@ -3,7 +3,7 @@
 library(dplyr)
 library(ggplot2)
 
-airline.delays<- read.csv("/Users/anneyoung/Desktop/airline_delay.csv")
+airline.delays<- read.csv("airline_delay.csv")
 
 our.airline.data<- airline.delays %>% subset(select = -c(carrier_ct, weather_ct,nas_ct, security_ct, late_aircraft_ct, arr_del15))
 
@@ -113,7 +113,7 @@ ggplot(box_airline, aes(x=Airport,y=Arrival.Delay))+geom_boxplot(fill=brewer.pal
 library(ggplot2)
 library(dplyr)
 library(caret)
-airline<-read.csv("/Users/anneyoung/Desktop/clean_airline_delay.csv")
+airline<-read.csv("clean_airline_delay.csv")
 airline2<-subset(airline, Airport==c("LGA","ORD","ATL"))
 ggplot(airline2,aes(x=as.factor(Month),y=Airline.Name,fill=Weather.Delay))+geom_tile()+scale_fill_distiller(palette="Spectral")+labs(x="Month", y="Airline Name",title="Weather Dealay in Major Airports by Month from 2003 to 2022")+theme(plot.title=element_text(hjust=0.5))+facet_wrap(~Airport)
 
