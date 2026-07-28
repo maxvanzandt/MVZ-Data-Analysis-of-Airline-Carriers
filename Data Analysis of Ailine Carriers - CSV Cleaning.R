@@ -1,7 +1,7 @@
 library(dplyr)
 library(ggplot2)
 
-airline.delays<- read.csv("/Users/devinrappe/Downloads/airline_delay.csv")
+airline.delays<- read.csv("airline_delay.csv")
 our.airline.data<- airline.delays %>% subset(select = -c(carrier_ct, weather_ct, 
 nas_ct, security_ct, late_aircraft_ct, arr_del15))
 
